@@ -28,15 +28,11 @@ class Solution {
        if(i<0 ) return 0;
         if(j< 0) return 0;
         if(arr[i][j]==1)return 0;
-
         if(i==0 && j==0 )return 1;
-        
-        if(arr[i][j]==1)return 0;
         if(dp[i][j]!=-1) return dp[i][j];
         int left=solve(i,j-1,arr,dp);
         int up=solve(i-1,j,arr,dp);
         dp[i][j]=left+up;
         return dp[i][j];
-
     }
 }
