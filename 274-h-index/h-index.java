@@ -7,7 +7,6 @@ class Solution {
         Arrays.sort(arr);
         int i=n-1;
         while(i>=0){
-            // if(arr[i]==0) break;
             if(arr[i]<n-i) return n-i-1;
             i--;
         }
