@@ -1,8 +1,6 @@
 class Solution {
     public int gcdOfOddEvenSums(int n) {
-        int e=n*(n+1);
-        int o=n*(n);
-        return gcd(o,e);
+        return n;
     }
     public int gcd(int a,int b){
         if(b==0)return a;
